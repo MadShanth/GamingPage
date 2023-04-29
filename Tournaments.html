@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/Tournaments.css" />
+    <title>Tournaments</title>
+  </head>
+
+  <body>
+
+    <section id="viewTournaments" class="viewTournaments">
+        <button class="dropdownTab">Pubg Mobile</button>
+        <div class="dropdownTabContent">
+            <span class="date">June 10, 2023</span></p>
+            <a href="#" class="button">Register Now</a>
+        </div>
+        <button class="dropdownTab">Call of Duty: Modern Warfare</button>
+        <div class="dropdownTabContent">
+            <span class="date">June 15, 2023</span></p>
+            <a href="#" class="button">Register Now</a>
+        </div>
+        <button class="dropdownTab">Fortnite: Battle Royale</button>
+        <div class="dropdownTabContent">
+            <span class="date">July 20, 2023</span></p>
+            <a href="#" class="button">Register Now</a>
+        </div>
+        <button class="dropdownTab">League of Legends</button>
+        <div class="dropdownTabContent">
+            <span class="date">August 17, 2023</span></p>
+            <a href="#" class="button">Register Now</a>
+        </div>
+    </section>
+
+    <section id="addTournaments">
+
+    </section>
+
+
+    <script>
+        var coll = document.getElementsByClassName("dropdownTab");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+
+  </body>
+</html>

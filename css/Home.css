@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Bruno Ace SC', cursive;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/Homebg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+nav ul{
+    background: #000;
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+
+nav ul li a{
+    color: #fff;
+}
+
+.about{
+    padding: 20px 8%;
+}
+
+nav.sticky{
+  position: fixed;
+  top: 0;
+  left: 0; 
+  border-bottom: 2px solid rgba(255, 255, 255, 0.537);
+  /*To make the logo come side by side*/
+  padding: 5px 8%;
+  background: rgba(0, 0, 0, 0.618);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  /*to make cool transition*/
+  transition: padding 1s; 
+}
+/*to make the text come from the right in the nav bar*/
+nav.sticky ul{
+  width: auto;
+  background-color: rgba(0, 0, 0, 0);
+  /*To get the color transparent around the border*/
+  border: none;
+  background: none;
+  
+}
+nav.sticky ul li{
+  background-color: rgba(0, 0, 0, 0);
+  /*To get the color transparent around the texts*/
+  background: none;
+  
+}
+
+.tournaments {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  .tournaments h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tournaments ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .tournaments li {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    min-width: 300px;
+  }
+  
+  .tournament-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+/*reviews*/
+.user-reviews {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.user-reviews h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-reviews ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-reviews li {
+  margin-bottom: 20px;
+}
+
+.user-reviews .review {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.user-reviews .review h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.user-reviews .review .rating {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff9900;
+  margin-bottom: 5px;
+}
+
+.user-reviews .review .comment {
+  font-size: 16px;
+  line-height: 1.5;
+}
